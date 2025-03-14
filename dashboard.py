@@ -64,7 +64,7 @@ if not filtered_df_day.empty:
     #grafik perbandingan weekday vs weekend
     st.subheader("📅 Distribusi Penyewaan Sepeda antara Hari Kerja vs Akhir Pekan")
     fig, ax = plt.subplots(figsize=(8,5))
-    sns.barplot(x='day_type', y='cnt', data=day_comparison_hour, hue='day_type', legend=False, ax=ax)
+    sns.barplot(x='day_type', y='cnt', data=day_comparison_hour, hue='day_type', legend=False, ax=ax, palette=['#1f77b4', '#1f77b4'])
     ax.set_title('Distribusi Penyewaan Sepeda antara Hari Kerja vs Akhir Pekan', fontsize=14)
     ax.set_xlabel('Kategori Hari', fontsize=12)
     ax.set_ylabel('Rata-rata Penyewaan', fontsize=12)
